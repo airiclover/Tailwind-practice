@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-  export function Profile ()
+export function Profile() {
   return (
     <div>
       <h1>Profile</h1>
@@ -19,4 +19,4 @@ import Image from "next/image";
       </p>
     </div>
   );
-};
+}
