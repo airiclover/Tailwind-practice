@@ -33,8 +33,8 @@ export function Service() {
               src={service.src}
               alt={service.name}
               loading="eager"
-              width={200}
-              height={200}
+              width={60}
+              height={60}
               priority
             />
             <h2>{service.name}</h2>
