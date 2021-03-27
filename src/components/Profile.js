@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export const Profile = () => {
+  export function Profile ()
   return (
     <div>
       <h1>Profile</h1>

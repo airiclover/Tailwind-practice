@@ -1,4 +1,4 @@
-export const Concept = () => {
+export function Concept() {
   return (
     <div>
       <h1>Concept</h1>
@@ -11,4 +11,4 @@ export const Concept = () => {
       </div>
     </div>
   );
-};
+}
