@@ -1,7 +1,7 @@
 export function Concept() {
   return (
     <div>
-      <h1>Concept</h1>
+      <h1 class="font-serif text-3xl tracking-wide">Concept</h1>
       <div>
         人と人との繋がりを大切にし
         <br />

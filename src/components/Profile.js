@@ -3,7 +3,7 @@ import Image from "next/image";
 export function Profile() {
   return (
     <div>
-      <h1>Profile</h1>
+      <h1 class="font-serif text-3xl tracking-wide">Profile</h1>
       <p>＼ Hello! ／</p>
       <Image
         src="/IMG_6794.JPG"
