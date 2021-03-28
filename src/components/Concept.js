@@ -1,14 +1,13 @@
 export function Concept() {
   return (
-    <div className="text-center">
+    <div className="py-12 px-2 text-center">
       <h1 className="font-Unna text-3xl tracking-wide  ">Concept</h1>
-
-      <div className="bg-light-pink text-xs text-center mx-20 p-7 tracking-widest leading-9 shadow-inner">
-        人と人との繋がりを大切にし
+      <div className="mt-6 bg-light-pink text-xs text-center rounded py-7 px-10 inline-block tracking-widest leading-9 shadow-inner">
+        自分の考えているアイデアを形に。
         <br />
-        つくったもので笑顔を届けたい。
+        「楽しみながら」をモットーに、
         <br />
-        一つ一つに想いを込めて制作に取り組みます
+        一つ一つ想いを込めて制作しています。
       </div>
     </div>
   );
