@@ -23,10 +23,9 @@ const SERVICES = [
 
 export function Service() {
   return (
-    <div>
-      <h1 className="font-serif text-3xl tracking-wide">Service</h1>
+    <div className="text-center">
+      <h1 className="font-Unna text-3xl tracking-wide">Service</h1>
       <div>
-        {/* 👇map回す */}
         {SERVICES.map((service) => (
           <div key={service.name}>
             <Image
