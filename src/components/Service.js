@@ -23,13 +23,13 @@ const SERVICES = [
 
 export function Service() {
   return (
-    <div className="py-12 px-2 text-center">
+    <div className="bg-stoneImg py-12 px-2 text-center">
       <h1 className="font-Unna text-3xl tracking-wide">Service</h1>
       <div>
         {SERVICES.map((service) => (
           <div
             key={service.name}
-            className="border-solid border w-64 mx-auto mb-8 p-8"
+            className="border-solid border w-64  mx-auto mb-8 p-8 bg-white"
           >
             <Image
               src={service.src}

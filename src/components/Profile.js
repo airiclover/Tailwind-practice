@@ -1,8 +1,10 @@
 export function Profile() {
   return (
-    <div className="py-12 px-2 text-center bg-light-yellow">
+    <div className="py-12 px-2 text-center bg-amber-light">
       <h1 className="font-Unna text-3xl tracking-wide">Profile</h1>
-      <p className="font-CourierNew text-xs">＼ Hello! ／</p>
+      <p className="font-CourierNew text-xs mt-8 ml-40 -mb-8 transform rotate-45">
+        ＼ Hello! ／
+      </p>
       <img
         src="IMG_6794.JPG"
         className="rounded-full h-48 w-48 mx-auto object-cover"
@@ -11,7 +13,7 @@ export function Profile() {
         Airi
       </div>
       <p className="pt-6 px-9 text-sm text-left">
-        岡山生まれ、大阪育ち。猫をこよなく愛しています。普段はインドア派ですが海外が大好き。時間があればふらっと海外一人旅に出かけることも。現在はＷＥＢ制作・プログラミングを学習しています。デザインをしたり、自分の考えたアイデアを形にしたり等ものを創り出すことが好きです。日々楽しんで成長していけるようこれからも頑張ります！
+        岡山生まれ、大阪育ち。猫をこよなく愛しています。普段はインドア派ですが海外が大好き。時間があればふらっと一人旅に出かけることも。現在はWEB制作・プログラミングを学習しています。デザインをしたり、自分の考えたアイデアを形にしたりなど、ものを創り出すことが好きです。日々楽しんで成長していけるようこれからも頑張ります！
       </p>
     </div>
   );
