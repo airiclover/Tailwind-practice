@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     colors: {
       "light-pink": "#fac7c777",
+      "dark-pink": "rgb(238, 227, 228)",
       "light-yellow": "rgb(255 249 245)",
     },
     fontFamily: {
