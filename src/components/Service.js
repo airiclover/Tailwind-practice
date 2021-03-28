@@ -24,11 +24,11 @@ const SERVICES = [
 export function Service() {
   return (
     <div>
-      <h1 class="font-serif text-3xl tracking-wide">Service</h1>
+      <h1 className="font-serif text-3xl tracking-wide">Service</h1>
       <div>
         {/* 👇map回す */}
         {SERVICES.map((service) => (
-          <div>
+          <div key={service.name}>
             <Image
               src={service.src}
               alt={service.name}
