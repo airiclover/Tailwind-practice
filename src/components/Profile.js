@@ -1,6 +1,6 @@
 export function Profile() {
   return (
-    <div className="py-12 px-2 text-center bg-amber-light">
+    <div className="pt-12 pb-14 px-2 text-center bg-amber">
       <h1 className="font-Unna text-3xl tracking-wide">Profile</h1>
       <div className="border-t w-12 mx-auto mt-1 mb-16"></div>
       <p className="font-CourierNew text-xs mt-8 ml-40 -mb-8 transform rotate-45">

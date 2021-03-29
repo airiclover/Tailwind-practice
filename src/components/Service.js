@@ -23,14 +23,14 @@ const SERVICES = [
 
 export function Service() {
   return (
-    <div className="bg-stoneImg py-12 px-2 text-center">
+    <div className="bg-stoneImg pt-12 pb-14 px-2 text-center">
       <h1 className="font-Unna text-3xl tracking-wide">Service</h1>
       <div className="border-t w-12 mx-auto mt-1 mb-10"></div>
       <div>
         {SERVICES.map((service) => (
           <div
             key={service.name}
-            className="border-solid border w-64  mx-auto mb-8 py-6 px-8 bg-white"
+            className="border-solid border w-64 mx-auto mb-8 last:mb-0 py-6 px-8 bg-white"
           >
             <Image
               src={service.src}

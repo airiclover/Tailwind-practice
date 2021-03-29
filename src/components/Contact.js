@@ -1,8 +1,84 @@
+// import React, { useState } from "react";
+import Image from "next/image";
+
+const SNSES = [
+  {
+    href: "https://twitter.com/cloverlovexxx",
+    src: "/twitter.svg",
+    alt: "twitter",
+  },
+  {
+    href: "https://www.instagram.com/a.u.bonvoyage/",
+    src: "/instagram.svg",
+    alt: "instagram",
+  },
+];
+
+const alertContact = () => {
+  alert(
+    "現在お問い合わせフォームはクローズしています。TwitterのDMにてお問い合わせをお願い致します。"
+  );
+};
+
 export function Contact() {
   return (
-    <div className="py-12 px-2 text-center bg-pink-dark ">
+    <div className="py-12 pb-4 px-2 text-center bg-pink-dark ">
       <h1 className="font-Unna text-3xl tracking-wide ">Contact</h1>
       <div className="border-t w-12 mx-auto mt-1 mb-10"></div>
+      <div className="flex flex-col items-center">
+        <label className="mb-4 text-left block">
+          <div className="text-sm">
+            お名前<span className="text-red">*</span>
+          </div>
+          <input
+            onChange={alertContact}
+            className="w-72 py-1.5 px-3 placeholder-gray-500 focus:outline-none"
+            placeholder="お名前"
+          />
+        </label>
+        <label className="mb-4 text-left block">
+          <div className="text-sm">
+            メールアドレス<span className="text-red">*</span>
+          </div>
+          <input
+            className="w-72 py-1.5 px-3 placeholder-gray-500 focus:outline-none"
+            placeholder="example@mail.co.jp"
+          />
+        </label>
+        <label className="mb-6 text-left block">
+          <div className="text-sm">
+            お問い合わせ内容<span className="text-red">*</span>
+          </div>
+          <textarea
+            className="w-72 h-24 py-2 px-3 placeholder-gray-500 focus:outline-none resize-none"
+            placeholder="問い合わせ内容をご記入下さい。"
+          />
+        </label>
+        <button className="py-2.5 px-28 bg-gray text-sm font-light inline-block">
+          送信する
+        </button>
+      </div>
+
+      <div className="mt-10">
+        {SNSES.map((sns) => (
+          <a
+            key={sns.alt}
+            target="_blank"
+            rel="noopener noreferrer"
+            href={sns.href}
+            className="p-1 m-2"
+          >
+            <Image
+              src={sns.src}
+              alt={sns.alt}
+              loading="eager"
+              width={30}
+              height={30}
+              priority
+            />
+          </a>
+        ))}
+      </div>
     </div>
   );
 }
