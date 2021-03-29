@@ -3,7 +3,7 @@ import Image from "next/image";
 const SERVICES = [
   {
     src: "/mac.svg",
-    name: "HP・LP制作",
+    name: "WEB制作",
     contents:
       "ヒアリング内容をもとに、お客さまの目的に沿ったWEB制作を致します。各デバイス幅に合わせてデザインするレスポンジブ化や、サイト修正も対応可能です。",
   },
