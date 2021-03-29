@@ -3,16 +3,13 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {
-      // "light-pink": "#fac7c777",
-      // "dark-pink": "rgb(238, 227, 228)",
-      // "light-yellow": "rgb(255 249 245)",
       white: "#fff",
+      gray: "rgb(196, 196, 196)",
+      amber: "rgb(255 249 245)",
+      red: "rgb(255, 116, 116)",
       pink: {
         light: "#fac7c777",
         dark: "rgb(238, 227, 228)",
-      },
-      amber: {
-        light: "rgb(255 249 245)",
       },
     },
     fontFamily: {
@@ -30,7 +27,9 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      margin: ["last"],
+    },
   },
   plugins: [],
 };
