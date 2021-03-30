@@ -6,39 +6,43 @@ const PTFIMAGES = [
     href: "airicat-portfolio.vercel.app",
     src: "/scr_shot1.png",
     name: "制作物-portfolio",
+    class: "justify-self-end",
   },
   {
     href: "https://airiclover.github.io/weatherwebapp/",
     src: "/whether.png",
     name: "制作物-whetherApp",
+    class: "justify-self-start",
   },
   {
     href: "https://cafe-search.vercel.app/",
     src: "/cafe.png",
     name: "制作物-cafeSearchApp",
+    class: "justify-self-end",
   },
   {
     href:
       "https://airicat-portfolio.com/portfolio/works-items/osaka-rightsup/osaka-rightsup.html",
     src: "/Osaka.jpg",
     name: "制作物-OsakalightUp",
+    class: "justify-self-start",
   },
 ];
 
 export function Portfolios() {
   return (
-    <div className="pt-12 pb-14 px-2 text-center bg-amber">
+    <div className="pt-12 pb-14 px-4 text-center bg-amber">
       <h1 className="font-Unna text-3xl tracking-wide">Portfolios</h1>
       <div className="border-t w-12 mx-auto mt-1 mb-10"></div>
 
-      <div className="grid grid-cols-2 grid-rows-2">
+      <div className="grid grid-cols-2 gap-y-1 gap-x-2.5">
         {PTFIMAGES.map((ptfimage) => (
           <a
             key={ptfimage.name}
             target="_blank"
             rel="noopener noreferrer"
             href={ptfimage.href}
-            className="my-1 mx-2 hover:opacity-75"
+            className={`${ptfimage.class} hover:opacity-75`}
           >
             <Image
               key={ptfimage.name}
