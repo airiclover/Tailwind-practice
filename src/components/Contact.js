@@ -1,4 +1,4 @@
-// import React, { useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 
 const SNSES = [
@@ -8,19 +8,23 @@ const SNSES = [
     alt: "twitter",
   },
   {
-    href: "https://www.instagram.com/a.u.bonvoyage/",
-    src: "/instagram.svg",
-    alt: "instagram",
+    href: "https://github.com/airiclover",
+    src: "/github.svg",
+    alt: "github",
   },
 ];
 
-const alertContact = () => {
-  alert(
-    "現在お問い合わせフォームはクローズしています。TwitterのDMにてお問い合わせをお願い致します。"
-  );
-};
-
 export function Contact() {
+  const [contactAlert, setcontactAlert] = useState("");
+
+  const onFocusContact = () => {
+    setcontactAlert("現在お問合せはTwitterDMでのみ受付しております。");
+  };
+
+  const onBlurContact = () => {
+    setcontactAlert("");
+  };
+
   return (
     <div className="py-12 pb-4 px-2 text-center bg-pink-dark ">
       <h1 className="font-Unna text-3xl tracking-wide ">Contact</h1>
@@ -31,10 +35,12 @@ export function Contact() {
             お名前<span className="text-red">*</span>
           </div>
           <input
-            onChange={alertContact}
             className="w-72 py-1.5 px-3 placeholder-gray-500 focus:outline-none"
             placeholder="お名前"
+            onFocus={onFocusContact}
+            onBlur={onBlurContact}
           />
+          <p className="text-xs text-red">{contactAlert}</p>
         </label>
         <label className="mb-4 text-left block">
           <div className="text-sm">

@@ -3,24 +3,25 @@ import Image from "next/image";
 
 const PTFIMAGES = [
   {
-    href: "/",
+    href: "airicat-portfolio.vercel.app",
     src: "/scr_shot1.png",
-    name: "制作物1",
+    name: "制作物-portfolio",
   },
   {
-    href: "/",
+    href: "https://airiclover.github.io/weatherwebapp/",
     src: "/whether.png",
-    name: "制作物2",
+    name: "制作物-whetherApp",
   },
   {
-    href: "/",
+    href: "https://cafe-search.vercel.app/",
     src: "/cafe.png",
-    name: "制作物3",
+    name: "制作物-cafeSearchApp",
   },
   {
-    href: "/",
+    href:
+      "https://airicat-portfolio.com/portfolio/works-items/osaka-rightsup/osaka-rightsup.html",
     src: "/Osaka.jpg",
-    name: "制作物4",
+    name: "制作物-OsakalightUp",
   },
 ];
 
@@ -32,19 +33,23 @@ export function Portfolios() {
 
       <div className="grid grid-cols-2 grid-rows-2">
         {PTFIMAGES.map((ptfimage) => (
-          <Link href={ptfimage.href} key={ptfimage.name}>
-            <a className="my-1 mx-2 hover:opacity-75">
-              <Image
-                key={ptfimage.name}
-                src={ptfimage.src}
-                alt={ptfimage.name}
-                loading="eager"
-                width={230}
-                height={230}
-                priority
-              />
-            </a>
-          </Link>
+          <a
+            key={ptfimage.name}
+            target="_blank"
+            rel="noopener noreferrer"
+            href={ptfimage.href}
+            className="my-1 mx-2 hover:opacity-75"
+          >
+            <Image
+              key={ptfimage.name}
+              src={ptfimage.src}
+              alt={ptfimage.name}
+              loading="eager"
+              width={230}
+              height={230}
+              priority
+            />
+          </a>
         ))}
       </div>
 
