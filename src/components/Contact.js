@@ -60,7 +60,7 @@ export function Contact() {
             placeholder="問い合わせ内容をご記入下さい。"
           />
         </label>
-        <button className="py-2.5 px-28 bg-gray text-sm font-light inline-block focus:outline-none">
+        <button className="py-2.5 px-28 bg-gray-light text-sm font-light inline-block focus:outline-none">
           送信する
         </button>
       </div>
