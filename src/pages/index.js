@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { Header } from "../components/Header";
 import { Top } from "../components/Top";
 import { Concept } from "../components/Concept";
 import { Profile } from "../components/Profile";
@@ -14,6 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Header />
       <Top />
       <Concept />
       <Profile />
