@@ -35,7 +35,7 @@ export function Portfolios() {
       <h1 className="font-Unna text-3xl tracking-wide">Portfolios</h1>
       <div className="border-t w-12 mx-auto mt-1 mb-10"></div>
 
-      <div className="grid grid-cols-2 gap-y-1 gap-x-2.5">
+      <div className="grid grid-cols-2 gap-y-1 gap-x-2.5 sm:gap-y-2 sm:gap-x-3.5">
         {PTFIMAGES.map((ptfimage) => (
           <a
             key={ptfimage.name}
