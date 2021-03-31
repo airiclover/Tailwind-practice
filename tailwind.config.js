@@ -4,12 +4,15 @@ module.exports = {
   theme: {
     colors: {
       white: "#fff",
-      gray: "rgb(196, 196, 196)",
-      amber: "rgb(255 249 245)",
-      red: "rgb(255, 116, 116)",
+      amber: "#fff9f5",
+      red: "#ff7474",
       pink: {
         light: "#fac7c777",
-        dark: "rgb(238, 227, 228)",
+        dark: "#eee3e4",
+      },
+      gray: {
+        light: "#c4c4c4",
+        dark: "#555",
       },
     },
     fontFamily: {
