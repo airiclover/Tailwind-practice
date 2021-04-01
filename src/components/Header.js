@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -11,6 +12,8 @@ const LINKS = [
 ];
 
 export function Header() {
+  const [menu, setMenu] = useState(false);
+
   return (
     <div>
       <div className="w-full h-14 bg-white fixed flex justify-between items-center ">
@@ -27,54 +30,58 @@ export function Header() {
           </a>
         </Link>
 
-        <div className="pt-2 pb-1 px-2 cursor-pointer">
+        <button
+          onClick={() => setMenu((menu) => !menu)}
+          className="pt-2 pb-1 px-2 cursor-pointer focus:outline-none"
+        >
           <Image
-            src="/menu.svg"
-            // src="/cross.svg"
+            src={menu ? "/cross.svg" : "/menu.svg"}
             alt="menuIcon"
             loading="eager"
             width={37}
             height={37}
             priority
           />
-        </div>
+        </button>
       </div>
 
-      {/* -----🍔------ */}
-      <div className="w-3/6 h-screen py-4 text-center bg-gray-dark text-white fixed top-14 right-0 z-10">
-        <div>
-          <p className="text-xs font-extralight">
-            thank you for
-            <br />
-            coming to my portfolio!
-          </p>
+      {/* 🍔🍔🍔 */}
+      {menu ? (
+        <div className="w-3/6 h-screen py-4 text-center bg-gray-dark text-white fixed top-14 right-0 z-10">
+          <div>
+            <p className="text-xs font-extralight">
+              thank you for
+              <br />
+              coming to my portfolio!
+            </p>
 
-          <div className="mx-6 py-1 flex justify-between text-xs -mb-8">
-            <p className="font-CourierNew">＼</p>
-            <p className="font-CourierNew">／</p>
+            <div className="mx-6 py-1 flex justify-between text-xs -mb-8">
+              <p className="font-CourierNew">＼</p>
+              <p className="font-CourierNew">／</p>
+            </div>
+            <Image
+              src="/cat.png"
+              alt="cat"
+              loading="eager"
+              width={130}
+              height={130}
+              priority
+            />
           </div>
-          <Image
-            src="/cat.png"
-            alt="cat"
-            loading="eager"
-            width={130}
-            height={130}
-            priority
-          />
-        </div>
 
-        <ul className="border-dotted border-b border-black">
-          {LINKS.map((link) => (
-            <li
-              key={link.name}
-              className="py-4 text-sm tracking-widest font-light border-dotted border-t border-black"
-            >
-              {link.name}
-            </li>
-          ))}
-        </ul>
-      </div>
-      {/* -----🍔------ */}
+          <ul className="border-dotted border-b border-black">
+            {LINKS.map((link) => (
+              <li
+                key={link.name}
+                className="py-4 text-sm tracking-widest font-light border-dotted border-t border-black"
+              >
+                {link.name}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
+      {/* 🍔🍔🍔 */}
     </div>
   );
 }
