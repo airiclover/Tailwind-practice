@@ -22,7 +22,7 @@ export function Profile() {
       <div className="pt-6 text-3xl font-light inline-block tracking-widest border-dotted border-b border-black">
         Airi
       </div>
-      <p className="pt-6 px-9 text-sm text-left sm:px-28">
+      <p className="pt-6 px-9 text-sm text-left sm:px-28 lg:w-6/12 lg:mx-auto">
         岡山生まれ、大阪育ち。とにかく猫が大好き！愛猫は"クローバー"。趣味は海外旅行で時間があればふらっと一人旅に出かけることも。現在はWEB制作・プログラミングを学習しています。デザインをしたり自分の考えたアイデアを形にしたり、ものを創り出すことが好きです。日々楽しんで成長していけるようこれからも頑張ります！
       </p>
     </div>
