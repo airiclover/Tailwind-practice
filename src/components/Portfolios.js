@@ -31,7 +31,7 @@ const PTFIMAGES = [
 
 export function Portfolios() {
   return (
-    <div className="pt-12 pb-14 px-4 text-center bg-amber">
+    <div id="portfolios" className="pt-12 pb-14 px-4 text-center bg-amber">
       <h1 className="font-Unna text-3xl tracking-wide">Portfolios</h1>
       <div className="border-t w-12 mx-auto mt-1 mb-10"></div>
 
@@ -58,8 +58,8 @@ export function Portfolios() {
       </div>
 
       <Link href="/">
-        <a>
-          <div className="mt-8 py-3 px-20 text-sm font-light border inline-block">
+        <a className="mt-8 py-3 px-20 text-sm font-light border inline-block">
+          <div>
             MORE<span className="pl-1">&gt;</span>
           </div>
         </a>

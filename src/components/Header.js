@@ -1,14 +1,15 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const LINKS = [
-  { src: "/", name: "TOP" },
-  { src: "/", name: "CONCEPT" },
-  { src: "/", name: "PROFILE" },
-  { src: "/", name: "SERVICE" },
-  { src: "/", name: "PORTFOLIOS" },
-  { src: "/", name: "CONTACT" },
+  { href: "top", name: "TOP" },
+  { href: "concept", name: "CONCEPT" },
+  { href: "profile", name: "PROFILE" },
+  { href: "service", name: "SERVICE" },
+  { href: "portfolios", name: "PORTFOLIOS" },
+  { href: "contact", name: "CONTACT" },
 ];
 
 export function Header() {
@@ -16,7 +17,7 @@ export function Header() {
 
   return (
     <div>
-      <div className="w-full h-14 bg-white fixed flex justify-between items-center ">
+      <div className="w-full h-14 bg-white fixed flex justify-between items-center z-10">
         <Link href="/">
           <a className="pt-2 pb-1 px-2">
             <Image
@@ -45,9 +46,9 @@ export function Header() {
         </button>
       </div>
 
-      {/* 🍔🍔🍔 */}
+      {/* 🍔ハンバーガーメニュー🍔 */}
       {menu ? (
-        <div className="w-3/6 h-screen py-4 text-center bg-gray-dark text-white fixed top-14 right-0 z-10">
+        <div className="w-3/6 h-screen py-4 z-10 text-center bg-gray-dark text-white fixed top-14 right-0">
           <div>
             <p className="text-xs font-extralight">
               thank you for
@@ -71,12 +72,11 @@ export function Header() {
 
           <ul className="border-dotted border-b border-black">
             {LINKS.map((link) => (
-              <li
-                key={link.name}
-                className="py-4 text-sm tracking-widest font-light border-dotted border-t border-black"
-              >
-                {link.name}
-              </li>
+              <AnchorLink href={`#${link.href}`} key={link.name} offset="40">
+                <li className="py-4 text-sm tracking-widest font-light border-dotted border-t border-black">
+                  {link.name}
+                </li>
+              </AnchorLink>
             ))}
           </ul>
         </div>
