@@ -36,7 +36,7 @@ export function Portfolios() {
       className="pt-12 pb-14 px-4 text-center bg-amber lg:pt-16 lg:pb-20"
     >
       <h1 className="font-Unna text-3xl tracking-wide">Portfolios</h1>
-      <div className="border-t w-12 mx-auto mt-1 mb-10"></div>
+      <div className="border-t w-12 mx-auto mt-2 mb-10"></div>
 
       <div className="grid grid-cols-2 gap-y-1 gap-x-2.5 sm:gap-y-2 sm:gap-x-3.5 lg:gap-y-4 lg:gap-x-6">
         {PTFIMAGES.map((ptfimage) => (
@@ -59,7 +59,7 @@ export function Portfolios() {
         ))}
       </div>
 
-      <Link href="/">
+      <Link href="/portfoliosPage">
         <a className="mt-8 py-3 px-20 text-sm font-light border inline-block">
           <div>
             MORE<span className="pl-1">&gt;</span>
