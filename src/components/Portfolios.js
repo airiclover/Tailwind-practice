@@ -31,7 +31,10 @@ const PTFIMAGES = [
 
 export function Portfolios() {
   return (
-    <div id="portfolios" className="pt-12 pb-14 px-4 text-center bg-amber">
+    <div
+      id="portfolios"
+      className="pt-12 pb-14 px-4 text-center bg-amber lg:pt-16 lg:pb-20"
+    >
       <h1 className="font-Unna text-3xl tracking-wide">Portfolios</h1>
       <div className="border-t w-12 mx-auto mt-1 mb-10"></div>
 
@@ -45,7 +48,6 @@ export function Portfolios() {
             className={`${ptfimage.class} hover:opacity-75`}
           >
             <Image
-              key={ptfimage.name}
               src={ptfimage.src}
               alt={ptfimage.name}
               loading="eager"

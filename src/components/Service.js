@@ -23,7 +23,10 @@ const SERVICES = [
 
 export function Service() {
   return (
-    <div id="service" className="bg-stoneImg pt-12 pb-14 px-2 text-center">
+    <div
+      id="service"
+      className="bg-stoneImg pt-12 pb-14 px-2 text-center lg:pt-16 lg:pb-20"
+    >
       <h1 className="font-Unna text-3xl tracking-wide">Service</h1>
       <div className="border-t w-12 mx-auto mt-1 mb-10"></div>
       <div className="lg:mx-auto lg:flex lg:items-start lg:w-9/12">

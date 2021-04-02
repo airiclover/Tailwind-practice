@@ -2,7 +2,10 @@ import Image from "next/image";
 
 export function Profile() {
   return (
-    <div id="profile" className="pt-12 pb-14 px-2 text-center bg-amber">
+    <div
+      id="profile"
+      className="pt-12 pb-14 px-2 text-center bg-amber lg:pt-16 lg:pb-20"
+    >
       <h1 className="font-Unna text-3xl tracking-wide">Profile</h1>
       <div className="border-t w-12 mx-auto mt-1 mb-16"></div>
       <div>

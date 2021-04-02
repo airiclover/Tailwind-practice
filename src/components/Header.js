@@ -33,7 +33,7 @@ export function Header() {
 
         <button
           onClick={() => setMenu((menu) => !menu)}
-          className="pt-2 pb-1 px-2 cursor-pointer focus:outline-none"
+          className="pt-2 pb-1 px-2 cursor-pointer focus:outline-none lg:hidden"
         >
           <Image
             src={menu ? "/cross.svg" : "/menu.svg"}
@@ -44,44 +44,56 @@ export function Header() {
             priority
           />
         </button>
-      </div>
 
-      {/* 🍔ハンバーガーメニュー🍔 */}
-      {menu ? (
-        <div className="w-3/6 h-screen py-4 z-10 text-center bg-gray-dark text-white fixed top-14 right-0">
-          <div>
-            <p className="text-xs font-extralight">
-              thank you for
-              <br />
-              coming to my portfolio!
-            </p>
+        {/* 🍔ハンバーガーメニュー🍔 */}
+        {menu ? (
+          <div className="w-3/6 h-screen py-4 z-10 text-center bg-gray-dark text-white fixed top-14 right-0 lg:hidden">
+            {/* SP/TB */}
+            <div>
+              <p className="text-xs font-extralight">
+                thank you for
+                <br />
+                coming to my portfolio!
+              </p>
 
-            <div className="mx-6 py-1 flex justify-between text-xs -mb-8">
-              <p className="font-CourierNew">＼</p>
-              <p className="font-CourierNew">／</p>
+              <div className="mx-6 py-1 flex justify-between text-xs -mb-8">
+                <p className="font-CourierNew">＼</p>
+                <p className="font-CourierNew">／</p>
+              </div>
+              <Image
+                src="/cat.png"
+                alt="cat"
+                loading="eager"
+                width={130}
+                height={130}
+                priority
+              />
             </div>
-            <Image
-              src="/cat.png"
-              alt="cat"
-              loading="eager"
-              width={130}
-              height={130}
-              priority
-            />
-          </div>
 
-          <ul className="border-dotted border-b border-black">
+            <ul className="border-dotted border-b border-black">
+              {LINKS.map((link) => (
+                <AnchorLink href={`#${link.href}`} key={link.name} offset="40">
+                  <li className="py-4 text-sm tracking-widest font-light border-dotted border-t border-black">
+                    {link.name}
+                  </li>
+                </AnchorLink>
+              ))}
+            </ul>
+          </div>
+        ) : null}
+        {/* 🍔🍔🍔 */}
+
+        {/* PC */}
+        <div className="hidden lg:flex lg:font-extralight">
+          <ul className="lg:flex">
             {LINKS.map((link) => (
               <AnchorLink href={`#${link.href}`} key={link.name} offset="40">
-                <li className="py-4 text-sm tracking-widest font-light border-dotted border-t border-black">
-                  {link.name}
-                </li>
+                <li className="p-4">{link.name}</li>
               </AnchorLink>
             ))}
           </ul>
         </div>
-      ) : null}
-      {/* 🍔🍔🍔 */}
+      </div>
     </div>
   );
 }

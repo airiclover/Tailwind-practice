@@ -26,7 +26,10 @@ export function Contact() {
   };
 
   return (
-    <div id="contact" className="py-12 pb-4 px-2 text-center bg-pink-dark ">
+    <div
+      id="contact"
+      className="pt-12 pb-6 px-2 text-center bg-pink-dark lg:pt-16 lg:pb-8"
+    >
       <h1 className="font-Unna text-3xl tracking-wide ">Contact</h1>
       <div className="border-t w-12 mx-auto mt-1 mb-10"></div>
       <div className="flex flex-col items-center">
