@@ -12,7 +12,7 @@ const LINKS = [
   { href: "contact", name: "CONTACT" },
 ];
 
-export function Header() {
+export function MainHeader() {
   const [menu, setMenu] = useState(false);
 
   return (
