@@ -33,7 +33,7 @@ export function Service() {
         {SERVICES.map((service) => (
           <div
             key={service.name}
-            className="border-solid border w-64 mx-auto mb-8 last:mb-0 py-6 px-8 bg-white lg:h-72"
+            className="border border-gray-dark w-64 mx-auto mb-8 last:mb-0 py-6 px-8 bg-white lg:h-72"
           >
             <Image
               src={service.src}
