@@ -50,16 +50,15 @@ export function Portfolios() {
             <Image
               src={ptfimage.src}
               alt={ptfimage.name}
-              loading="eager"
               width={230}
               height={230}
-              priority
+              loading="eager"
             />
           </a>
         ))}
       </div>
 
-      <Link href="/portfoliosPage">
+      <Link href="/portfolio">
         <a className="mt-8 py-3 px-20 text-sm font-light border inline-block">
           <div>
             MORE<span className="pl-1">&gt;</span>

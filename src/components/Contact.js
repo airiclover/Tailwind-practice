@@ -80,9 +80,9 @@ export function Contact() {
             <Image
               src={sns.src}
               alt={sns.alt}
-              loading="eager"
               width={30}
               height={30}
+              loading="eager"
               priority
             />
           </a>

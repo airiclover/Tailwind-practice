@@ -38,10 +38,9 @@ export function Service() {
             <Image
               src={service.src}
               alt={service.name}
-              loading="eager"
               width={60}
               height={60}
-              priority
+              loading="eager"
             />
             <h2 className="py-1 border-dotted border-b border-black">
               {service.name}

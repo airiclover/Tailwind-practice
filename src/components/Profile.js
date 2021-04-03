@@ -15,10 +15,9 @@ export function Profile() {
         <Image
           src="/IMG_6794.JPG"
           alt="profile"
-          loading="eager"
           width={200}
           height={200}
-          priority
+          loading="eager"
           objectFit="cover"
           className="rounded-full mx-auto"
         />

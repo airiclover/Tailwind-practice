@@ -10,9 +10,9 @@ export function SubHeader() {
             <Image
               src="/phonto.png"
               alt="headerIcon"
-              loading="eager"
               width={200}
               height={37}
+              loading="eager"
               priority
             />
           </a>

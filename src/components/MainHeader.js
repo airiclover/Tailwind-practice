@@ -23,9 +23,9 @@ export function MainHeader() {
             <Image
               src="/phonto.png"
               alt="headerIcon"
-              loading="eager"
               width={200}
               height={37}
+              loading="eager"
               priority
             />
           </a>
@@ -38,9 +38,9 @@ export function MainHeader() {
           <Image
             src={menu ? "/cross.svg" : "/menu.svg"}
             alt="menuIcon"
-            loading="eager"
             width={37}
             height={37}
+            loading="eager"
             priority
           />
         </button>
@@ -60,14 +60,7 @@ export function MainHeader() {
                 <p className="font-CourierNew">＼</p>
                 <p className="font-CourierNew">／</p>
               </div>
-              <Image
-                src="/cat.png"
-                alt="cat"
-                loading="eager"
-                width={130}
-                height={130}
-                priority
-              />
+              <img src="/cat.png" alt="cat" className="w-32 h-32 mx-auto" />
             </div>
 
             <ul className="border-dotted border-b border-black">
