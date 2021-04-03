@@ -33,7 +33,7 @@ export function MainHeader() {
 
         <button
           onClick={() => setMenu((menu) => !menu)}
-          className="pt-2 pb-1 px-2 cursor-pointer focus:outline-none lg:hidden"
+          className="pt-2 pb-1 pr-3 pl-6 cursor-pointer focus:outline-none lg:hidden"
         >
           <Image
             src={menu ? "/cross.svg" : "/menu.svg"}
@@ -60,7 +60,7 @@ export function MainHeader() {
                 <p className="font-CourierNew">＼</p>
                 <p className="font-CourierNew">／</p>
               </div>
-              <img src="/cat.png" alt="cat" className="w-32 h-32 mx-auto" />
+              <Image src="/cat.png" alt="cat" width={130} height={130} />
             </div>
 
             <ul className="border-dotted border-b border-black">
