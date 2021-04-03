@@ -5,7 +5,7 @@ import { SubHeader } from "../../components/SubHeader";
 // 👇別リンク用
 const ANOTHERLINKS = [
   {
-    href: "airicat-portfolio.vercel.app",
+    href: "https://airicat-portfolio.vercel.app/",
     src: "/scr-shot-pc-ver1.png",
     name: "My Portfolio",
   },
@@ -69,8 +69,8 @@ export default function Portfolio() {
                 src={anotherLink.src}
                 alt={anotherLink.name}
                 loading="eager"
-                width={330}
-                height={230}
+                width={530}
+                height={330}
                 objectFit="cover"
                 className="object-top hover:opacity-75"
               />
@@ -88,8 +88,8 @@ export default function Portfolio() {
                   src={anotherPage.src}
                   alt={anotherPage.name}
                   loading="eager"
-                  width={330}
-                  height={230}
+                  width={530}
+                  height={330}
                   objectFit="cover"
                   className="object-top hover:opacity-75"
                 />

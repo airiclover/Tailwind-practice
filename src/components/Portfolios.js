@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const PTFIMAGES = [
   {
-    href: "airicat-portfolio.vercel.app",
+    href: "https://airicat-portfolio.vercel.app/",
     src: "/scr_shot1.png",
     name: "制作物-portfolio",
     class: "justify-self-end",
