@@ -10,7 +10,7 @@ const ANOTHERLINKS = [
     name: "My Portfolio",
   },
   {
-    href: "https://airiclover.github.io/weatherwebapp/",
+    href: "https://weatherwebapp.vercel.app/",
     src: "/whether.png",
     name: "Whether App",
   },

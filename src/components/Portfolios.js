@@ -9,7 +9,7 @@ const PTFIMAGES = [
     class: "justify-self-end",
   },
   {
-    href: "https://airiclover.github.io/weatherwebapp/",
+    href: "https://weatherwebapp.vercel.app/",
     src: "/whether.png",
     name: "制作物-whetherApp",
     class: "justify-self-start",
