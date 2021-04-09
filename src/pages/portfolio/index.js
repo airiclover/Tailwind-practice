@@ -20,13 +20,12 @@ const ANOTHERLINKS = [
     name: "Cafe Search App",
   },
   {
-    href:
-      "https://airicat-portfolio.com/portfolio/works-items/osaka-rightsup/osaka-rightsup.html",
+    href: "https://airiclover.github.io/OsakaLightUp/",
     src: "/scr-shot-pc-ver5.png",
     name: "Osaka light Up HP",
   },
   {
-    href: "https://airicat-portfolio.com/portfolio/works-items/works-4.html",
+    href: "https://airiclover.github.io/catchatbot/",
     src: "/chat.png",
     name: "Chatbot App",
   },

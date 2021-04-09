@@ -21,8 +21,7 @@ const PTFIMAGES = [
     class: "justify-self-end",
   },
   {
-    href:
-      "https://airicat-portfolio.com/portfolio/works-items/osaka-rightsup/osaka-rightsup.html",
+    href: "https://airiclover.github.io/OsakaLightUp/",
     src: "/Osaka.jpg",
     name: "制作物-OsakalightUp",
     class: "justify-self-start",
